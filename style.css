@@ -1,44 +1,692 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+}
+
 body {
-    background-color: #222831;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;;
     width: 1440px;
-}
-
-#header {
-    color: #fff;
-    text-align: left;
-    padding: 10px;
-    font-family: Montserrat, serif;
-
-}
-
-#header ul {
-    list-style: none;
-}
-
-#header ul li {
-    display: inline;
-    margin-right: 3.75%
-}
-
-#header a {
-    text-decoration: none;
-    color: #fff;
+    margin: 0 auto;
     position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.back_icons div {
+    position: absolute;
+    z-index: 10;
+}
+
+/*container*/
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.header {
+    padding-top: 42px;
+    z-index: 10;
+    width: 100%;
+
+    .nav {
+        margin-left: 50px;
+    }
+
+    .nav_link {
+        display: inline-block;
+        margin-right: 46px;
+        vertical-align: top;
+        color: #fff;
+        transition: color .2s linear;
+        text-decoration: none;
+        position: relative;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 25px;
+    }
+
+    .nav_link:nth-child(5) {
+        margin-right: 44px;
+    }
+
+    .nav_link::after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 3px;
+        background-color: #29a19c;
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.2s linear;
+    }
+
+    .nav_link:hover:after {
+        opacity: 1;
+    }
+
+    .header_logo img{
+        cursor: pointer;
+        width: 225px;
+        height: auto;
+        margin-right: 55px;
+        vertical-align: middle;
+    }
+
+
+    .header_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/*page*/
+.page {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*section*/
+.section {
+    position: relative;
+}
+
+.section--sea {
+    background-color: #29a19c;
+}
+
+.section_wave {
+    position: relative;
+    z-index: 1;
+    left: -198px;
+    bottom: -6px;
+}
+
+/*intro*/
+.intro_inner {
+    margin-top: 58px;
+    margin-bottom: 31px;
+    margin-left: 50px;
+}
+
+.intro_title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 153px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+.intro_sub_title {
+    text-transform: uppercase;
+    font-size: 33px;
+    margin-bottom: 14px;
+    padding-left: 5px;
+    letter-spacing: 0.16vw;
+    font-weight: 700;
+}
+
+.intro_text {
+    display: block;
+    font-size: 15px;
+    padding-left: 9px;
+    letter-spacing: 0.046vw;
+    line-height: 24px;
+    margin-bottom: 22px;
+    width: 515px;
+}
+
+.btn_order {
+    width: 247px;
+    height: 58px;
+    background-color: #29a19c;
+    border: none;
+    border-radius: 15px;
+    font-size: 33px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 28px;
+    position: relative;
+    z-index: 1000;
+}
+
+.btn_order--first {
+    margin-left: 5px;
+}
+
+.intro_inner_img {
+    position: absolute;
+    right: -18px;
+    bottom: 53px;
+}
+
+/*block coffee*/
+.coffee_inner {
+    display: flex;
+    padding-top: 35px;
+}
+
+.coffee_inner--white {
+    padding: 100px 0 51px;
+}
+
+.coffee_inner--hot {
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+
+.btn_order--black {
+    background-color: #222831;
+    padding: 8px 29px 10px 27px;
+}
+
+.coffee_title {
+    font-size: 125px;
+    line-height: 113px;
+    display: table-cell;
+    font-family: 'Grand Hotel', cursive;
+    /*margin-bottom: 65px;*/
+    vertical-align: middle;
+    height: 416px;
+}
+
+.coffee_order {
+    text-align: center;
+    width: 45%;
+    margin-top: 18px;
+    letter-spacing: 5px;
+}
+
+.coffee_order_inner {
+    width: 380px;
+    display: inline-block;
+    text-align: left;
+}
+
+.coffee_order_inner--right {
+    text-align: right;
+    width: 332px;
+
+}
+
+.coffee_description {
+    width: 49%;
+    text-align: center;
+}
+
+.coffee_description--left {
+    width: 54%;
+    text-align: center;
+}
+
+.coffee_description_text {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 39px;
+    text-align: right;
+    width: 89%;
+    letter-spacing: 0.0886vw; /**/
+}
+
+.coffee_description_text--left {
+    text-align: left;
+    display: inline-block;
+    width: 78%;
+    position: relative;
+    left: 50px;
+    font-size: 23px;
+    letter-spacing: 0.0886vw;
+    line-height: 41px;
+}
+
+.coffee_description_text span {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.coffee_description_text--white {
+    font-size: 21px;
+    line-height: 39px;
+    display: inline-block;
+    width: 82%;
+    position: relative;
+    right: 15px;
+    top: -5px;
+    letter-spacing: 0.109vw;
+}
+
+.coffee_description_img {
+    position: relative;
+    top: 1px;
+    right: 1px;
+    margin-bottom: 35px;
+}
+
+.coffee_description_img--left {
+    margin-bottom: 29px;
+    top: 0;
+}
+
+.coffee_description_img--white {
+    right: -13px;
+    top: -9px;
+    margin-bottom: 31px;
+}
+
+.coffee_title--right {
+    height: 470px;
+}
+
+.coffee_title--right span {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    right: 6px;
+}
+
+.coffee_title--white {
+    height: 424px;
+}
+
+/*Пишите по порядку и с комментариями*/
+/*Здесь должны быть voucher, reviews и расписание*/
+
+.voucher_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: -24px;
+    margin-top: -40px;
+}
+
+/*voucher*/
+.btn_order--voucher {
+    width: 361px;
+    height: 57px;
+    text-indent: -1px;
+    font-size: 31px;
+    letter-spacing: 1.4px;
+
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+.voucher_title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 130px;
+    font-weight: 400;
+
+    margin-bottom: -10px;
+    margin-left: -28px;
+}
+
+/*Reviews*/
+.reviews_inner {
+    padding-top: 73px;
+    width: 100%;
+    margin-left: -2px;
+    height: 1000px;
+}
+
+.reviews_title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 88px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.015vw;
+    margin-left: -1px;
+}
+
+.reviews_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    width: 85%;
+    margin: 0 auto 0;
+    padding-top: 2px;
+}
+
+.reviews_john_info {
+    width: 500px;
+    text-align: center;
+    margin-left: 48px;
+    margin-top: 12px;
+}
+
+.reviews_ella_info {
+    width: 500px;
+    text-align: center;
+    margin-right: 54px;
+    margin-top: 11px;
+}
+
+.review_img {
+    padding-left: 7px;
+}
+
+.customers_name {
+    font-size: 50px;
+    font-family: 'Grand Hotel', cursive;
+    margin-top: 37px;
+    margin-left: 1px;
+}
+
+.ella_name {
+    margin-top: 45px;
+    margin-right: 3px;
+}
+
+.reviews_description_text {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    line-height: 27.5px;
+    margin-top: 25px;
+    margin-left: 7px;
+}
+
+.ella_description_text {
+    margin-top: 16px;
+}
+
+/*Дальше расписание*/
+/*shedule*/
+.shedule_inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 34px;
+    padding-top: 42px;
+    text-align: center;
+    height: 584px;
+    margin-bottom: -15px;
+}
+
+.shedule_title {
+    width: 100%;
+    font-size: 98px;
+    letter-spacing: 4px;
+    line-height: 31px;
+    font-family: 'Grand Hotel', cursive;
+    margin-bottom: 33px;
+}
+
+.shedule_block {
+    width: 100%;
+    position: relative;
+    left: -4px;
+}
+
+.shedule_days {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    letter-spacing: -0.02vw;
+}
+
+.shedule_time {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+
+/*Branches*/
+.branch_content {
+    height: 1035px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: -10px;
+}
+
+.branches_title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 88px;
+    text-align: center;
+    letter-spacing: 4px;
+    width: 100%;
+    margin-top: 3px;
+    line-height: 134px;
+}
+
+.branches_inner {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 54px;
+    width: 100%;
+}
+
+.branches_col {
+    width: 26%;
+}
+
+.branch_name {
+    color: #fff;
+    font-size: 33px;
+    font-weight: bold;
+    width: 246px;
+    height: 58px;
+    background-color: #29a19c;
+    border-radius: 15px;
+    margin: 34px auto 36px;
+    padding-top: 10px;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 34px;
+}
+
+.branch_com {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: #29a19c;
+    height: 45px;
+    width: 20px;
+    border-radius: 20% 0 50% 350% / 100% 0 100% 300%;
+}
+
+.branch_name_jakarta {
+    padding-top: 12px;
+    padding-left: 3px;
+}
+
+.branch_name--first {
+    margin-left: -10px;
+}
+
+.branch_text {
+    font-size: 15px;
+    letter-spacing: 0.045vw;
+    line-height: 28px;
+    text-align: center;
+}
+
+.branch_text--first {
+    width: 98%;
+    margin-left: -5px;
+}
+
+.branch_name--first {
+    display: block;
+    margin-left: 42px;
+}
+
+.wave_bot--branch {
+    height: 197px;
+    bottom: -67px;
+    left: -5px;
+    width: 101%;
+}
+
+/*Здесь footer*/
+
+.footer_header {
+    display: flex;
+}
+
+.menu_item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.menu_list {
+    list-style-type: none;
+}
+
+.menu_link {
+    text-decoration: none;
+}
+
+.menu_title {
+    font-size: 33px;
+    font-family: 'Montserrat ', sans-serif;
     font-weight: bold;
 }
 
-#header a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #29a19c;
-    bottom: 0;
-    left: 50%;
-    transition: width 0.3s ease;
-    transform: translateX(-50%);
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#header a:hover::before {
+.nav_flink {
+    display: inline-block;
+    margin-right: 63px;
+    vertical-align: top;
+    color: #fff;
+    transition: color .2s linear;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+.footer_content {
+    display: flex;
+    margin-top: 53px;
+    padding-left: 60px;
+
+}
+
+.footer_end {
+    display: flex;
+    padding: 43px 58px 39px 60px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.socials {
+    width: 16.5%;
+    display: flex;
+}
+
+.socials i {
+    display: block;
+    margin-right: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    bottom: 1px;
+    font-size: 24px;
+}
+
+.fa-instagram {
+    font-size: 26px;
+    bottom: 1.5px;
+    right: 2px;
+}
+
+.fa-twitter {
+    font-size: 23px;
+    bottom: 2px;
+    right: 7px;
+}
+
+.fa-youtube {
+    font-size: 22.5px;
+    bottom: -0.5px;
+    right: 17px;
+}
+
+.footer-line {
     width: 100%;
+    background-color: #222831;
+    height: 7px;
+}
+
+.logo_image123 {
+    width: 55%;
+}
+
+.stats1 {
+    width: 50%;
+    display: block;
+    justify-content: space-between;
+    letter-spacing: 0.1vw;
+}
+
+.stats2 {
+    width: 46%;
+    display: block;
+    justify-content: space-between;
+    letter-spacing: 0.1vw;
+}
+
+.stats2 .Title {
+    letter-spacing: 0.1vw;
+}
+
+.Title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu_list_ott {
+    margin-top: 52px;
+}
+
+.menu_list_ott li {
+    margin-top: 9px;
+}
+
+.stats {
+    margin-top: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
