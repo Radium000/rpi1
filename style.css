@@ -1,12 +1,14 @@
-/* styles.css */
 body {
-    background-color: #222831; /* Цвет фона страницы */
+    background-color: #222831;
+    width: 1440px;
 }
 
 #header {
     color: #fff;
     text-align: left;
     padding: 10px;
+    font-family: Montserrat, serif;
+
 }
 
 #header ul {
@@ -15,27 +17,28 @@ body {
 
 #header ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 3.75%
 }
 
 #header a {
     text-decoration: none;
     color: #fff;
-    position: relative; /* Добавляем позицию relative */
+    position: relative;
+    font-weight: bold;
 }
 
 #header a::before {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px; /* Толщина подчеркивания */
-    background-color: #29a19c; /* Цвет подчеркивания */
+    height: 2px;
+    background-color: #29a19c;
     bottom: 0;
-    left: 50%; /* Начинаем подчеркивание с середины */
-    transition: width 0.3s ease; /* Анимация расширения */
-    transform: translateX(-50%); /* Центрируем подчеркивание */
+    left: 50%;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
 }
 
 #header a:hover::before {
-    width: 100%; /* Расширяем подчеркивание при наведении */
+    width: 100%;
 }
