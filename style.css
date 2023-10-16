@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.back_icons div {
+.back_icons img {
     position: absolute;
     z-index: 10;
 }
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 1;
     }
 
-    .header_logo img{
+    .header_logo img {
         cursor: pointer;
         width: 225px;
         height: auto;
@@ -117,10 +117,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.section--sea {
-    background-color: #29a19c;
-}
-
 .section_wave {
     position: relative;
     z-index: 1;
@@ -129,37 +125,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*intro*/
-.intro_inner {
+.intro {
     margin-top: 58px;
     margin-bottom: 31px;
     margin-left: 50px;
-}
 
-.intro_title {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 153px;
-    margin-bottom: 25px;
-    font-weight: 400;
-    letter-spacing: 6px;
-}
+    .intro_title {
+        font-family: 'Grand Hotel', cursive;
+        font-size: 153px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        letter-spacing: 6px;
+    }
 
-.intro_sub_title {
-    text-transform: uppercase;
-    font-size: 33px;
-    margin-bottom: 14px;
-    padding-left: 5px;
-    letter-spacing: 0.16vw;
-    font-weight: 700;
-}
+    .intro_sub_title {
+        text-transform: uppercase;
+        font-size: 33px;
+        margin-bottom: 14px;
+        padding-left: 5px;
+        letter-spacing: 2.3px;
+        font-weight: 700;
+    }
 
-.intro_text {
-    display: block;
-    font-size: 15px;
-    padding-left: 9px;
-    letter-spacing: 0.046vw;
-    line-height: 24px;
-    margin-bottom: 22px;
-    width: 515px;
+    .intro_text {
+        display: block;
+        font-size: 15px;
+        padding-left: 9px;
+        letter-spacing: 0.66px;
+        line-height: 24px;
+        margin-bottom: 22px;
+        width: 515px;
+    }
 }
 
 .btn_order {
@@ -176,143 +172,155 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-.btn_order--first {
-    margin-left: 5px;
-}
-
-.intro_inner_img {
-    position: absolute;
-    right: -18px;
-    bottom: 53px;
-}
-
-/*block coffee*/
-.coffee_inner {
+.black_coffee_section {
     display: flex;
-    /*padding-top: 35px;*/
+    justify-content: space-between;
+    background-color: #29a19c;
+    padding-top: 36px;
+
+
+    .coffee_order {
+        margin-top: 18px;
+        margin-left: 90px;
+        width: 340px;
+
+
+        .coffee_title {
+            padding-left: 44px;
+            font-size: 125px;
+            line-height: 113px;
+            display: table-cell;
+            font-family: 'Grand Hotel', cursive;
+            font-weight: normal;
+            vertical-align: middle;
+            height: 416px;
+            text-align: left;
+
+            letter-spacing: 5px;
+        }
+
+        .btn_order_black {
+            background-color: #222831;
+            padding: 8px 29px 10px 27px;
+            margin-left: 44px;
+        }
+
+    }
+
+    .coffee_description {
+        width: 800px;
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .coffee_description_text {
+        max-width: 627px;
+        margin-top: 34px;
+        margin-left: 50px;
+        font-size: 24px;
+        letter-spacing: 1.27px;
+        line-height: 39px;
+        text-align: right;
+    }
 }
 
-.coffee_inner--white {
-    padding: 100px 0 51px;
+.hot_coffee_section {
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 90px;
+    height: 740px;
+
+    .coffee_order {
+        margin-top: 16px;
+        margin-right: 80px;
+        width: 475px;
+        text-align: right;
+
+
+        .coffee_title {
+            padding-right: 6px;
+            font-size: 125px;
+            line-height: 113px;
+            display: table-cell;
+            font-family: 'Grand Hotel', cursive;
+            font-weight: normal;
+            vertical-align: middle;
+            height: 424px;
+            text-align: right;
+
+            letter-spacing: 5px;
+        }
+    }
+
+    .coffee_description {
+        width: 720px;
+        text-align: center;
+
+        margin-top: -49px;
+        margin-left: 27px;
+    }
+
+    .coffee_description_text{
+        text-align: left;
+        display: inline-block;
+        width: 601px;
+        position: relative;
+        left: 49px;
+        top: 31px;
+        font-size: 23px;
+        letter-spacing: 1.25px;
+        line-height: 41px;
+    }
 }
 
-.coffee_inner--hot {
-    margin-top: -45px;
-    padding-bottom: 0;
+
+.white_coffee_section {
+    display: flex;
+    justify-content: space-between;
+    height: 760px;
+
+
+    .coffee_order {
+        margin-top: 18px;
+        margin-left: 90px;
+        width: 340px;
+        text-align: center;
+
+        .coffee_title {
+            padding-left: 44px;
+            font-size: 125px;
+            line-height: 113px;
+            display: table-cell;
+            font-family: 'Grand Hotel', cursive;
+            font-weight: normal;
+            vertical-align: middle;
+            height: 416px;
+            text-align: left;
+
+            letter-spacing: 5px;
+        }
+
+    }
+
+    .coffee_description {
+        width: 800px;
+        text-align: center;
+        margin-right: 24px;
+        margin-top: -15px;
+    }
+
+    .coffee_description_text {
+        width: 567px;
+        margin-top: 35px;
+        margin-left: 92px;
+        font-size: 21px;
+        letter-spacing: 1.53px;
+        line-height: 39px;
+        text-align: right;
+    }
 }
 
-.btn_order--black {
-    background-color: #222831;
-    padding: 8px 29px 10px 27px;
-}
-
-.coffee_title {
-    font-size: 125px;
-    line-height: 113px;
-    display: table-cell;
-    font-family: 'Grand Hotel', cursive;
-    /*margin-bottom: 65px;*/
-    vertical-align: middle;
-    height: 416px;
-}
-
-.coffee_order {
-    text-align: center;
-    width: 45%;
-    margin-top: 18px;
-    letter-spacing: 5px;
-}
-
-.coffee_order_inner {
-    width: 380px;
-    display: inline-block;
-    text-align: left;
-}
-
-.coffee_order_inner--right {
-    text-align: right;
-    width: 332px;
-
-}
-
-.coffee_description {
-    width: 49%;
-    text-align: center;
-}
-
-.coffee_description--left {
-    width: 54%;
-    text-align: center;
-}
-
-.coffee_description_text {
-    font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 39px;
-    text-align: right;
-    width: 89%;
-    letter-spacing: 0.0886vw; /**/
-}
-
-.coffee_description_text--left {
-    text-align: left;
-    display: inline-block;
-    width: 78%;
-    position: relative;
-    left: 50px;
-    font-size: 23px;
-    letter-spacing: 0.0886vw;
-    line-height: 41px;
-}
-
-.coffee_description_text span {
-    display: inline-block;
-    padding-right: 5px;
-}
-
-.coffee_description_text--white {
-    font-size: 21px;
-    line-height: 39px;
-    display: inline-block;
-    width: 82%;
-    position: relative;
-    right: 15px;
-    top: -5px;
-    letter-spacing: 0.109vw;
-}
-
-.coffee_description_img {
-    position: relative;
-    top: 1px;
-    right: 1px;
-    margin-bottom: 35px;
-}
-
-.coffee_description_img--left {
-    margin-bottom: 29px;
-    top: 0;
-}
-
-.coffee_description_img--white {
-    right: -13px;
-    top: -9px;
-    margin-bottom: 31px;
-}
-
-.coffee_title--right {
-    height: 470px;
-}
-
-.coffee_title--right span {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    right: 6px;
-}
-
-.coffee_title--white {
-    height: 424px;
-}
 
 /*Пишите по порядку и с комментариями*/
 /*Здесь должны быть voucher, reviews и расписание*/
