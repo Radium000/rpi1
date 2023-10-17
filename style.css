@@ -23,6 +23,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #222831;;
     width: 1440px;
+    height: 7057px;
     margin: 0 auto;
     position: relative;
 }
@@ -261,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 27px;
     }
 
-    .coffee_description_text{
+    .coffee_description_text {
         text-align: left;
         display: inline-block;
         width: 601px;
@@ -325,378 +326,339 @@ h1, h2, h3, h4, h5, h6 {
 /*Пишите по порядку и с комментариями*/
 /*Здесь должны быть voucher, reviews и расписание*/
 
-.voucher_inner {
+
+.voucher_section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    margin-left: -24px;
+    margin-left: -10px;
     margin-top: -40px;
+
+    .voucher_title {
+        font-family: 'Grand Hotel', cursive;
+        font-size: 130px;
+        font-weight: 400;
+
+        margin-bottom: -8px;
+        margin-left: -28px;
+    }
+
+    .btn_order_voucher {
+        width: 361px;
+        height: 57px;
+        text-indent: -1px;
+        font-size: 31px;
+        letter-spacing: 1.4px;
+
+        margin-top: 10px;
+        margin-left: 23px;
+    }
 }
 
-/*voucher*/
-.btn_order--voucher {
-    width: 361px;
-    height: 57px;
-    text-indent: -1px;
-    font-size: 31px;
-    letter-spacing: 1.4px;
 
-    margin-top: 10px;
-    margin-left: 23px;
-}
-
-.voucher_title {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 130px;
-    font-weight: 400;
-
-    margin-bottom: -10px;
-    margin-left: -28px;
-}
-
-/*Reviews*/
-.reviews_inner {
+.reviews_section {
     padding-top: 73px;
     width: 100%;
     margin-left: -2px;
-    /*height: 1000px;*/
     margin-bottom: -8px;
+
+    .reviews_title {
+        font-family: 'Grand Hotel', cursive;
+        font-size: 88px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: -0.2px;
+        margin-left: -1px;
+        margin-top: -2px;
+        margin-bottom: 37px;
+    }
+
+    .reviews_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 85%;
+        margin: 0 auto 0;
+
+        .review_img {
+            padding-left: 6px;
+        }
+
+        .reviews_john_info {
+            width: 500px;
+            text-align: center;
+            margin-left: 48px;
+            margin-top: 12px;
+        }
+
+        .reviews_ella_info {
+            width: 500px;
+            text-align: center;
+            margin-right: 54px;
+            margin-top: 11px;
+
+            .ella_name {
+                margin-top: 45px;
+                margin-right: 3px;
+            }
+
+            .ella_description_text {
+                margin-top: 16px;
+            }
+        }
+
+        .customers_name {
+            font-size: 50px;
+            font-family: 'Grand Hotel', cursive;
+            margin-top: 37px;
+            margin-left: 1px;
+            font-weight: normal;
+        }
+
+        .reviews_description_text {
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            line-height: 27.5px;
+            margin-top: 25px;
+            margin-left: 7px;
+        }
+
+    }
+
 }
 
-.reviews_title {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 88px;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: -0.015vw;
-    margin-left: -1px;
-}
-
-.reviews_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*height: 700px;*/
-
-    width: 85%;
-    margin: 0 auto 0;
-    padding-top: 2px;
-}
-
-.reviews_john_info {
-    width: 500px;
-    text-align: center;
-    margin-left: 48px;
-    margin-top: 12px;
-}
-
-.reviews_ella_info {
-    width: 500px;
-    text-align: center;
-    margin-right: 54px;
-    margin-top: 11px;
-}
-
-.review_img {
-    padding-left: 7px;
-}
-
-.customers_name {
-    font-size: 50px;
-    font-family: 'Grand Hotel', cursive;
-    margin-top: 37px;
-    margin-left: 1px;
-}
-
-.ella_name {
-    margin-top: 45px;
-    margin-right: 3px;
-}
-
-.reviews_description_text {
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    line-height: 27.5px;
-    margin-top: 25px;
-    margin-left: 7px;
-}
-
-.ella_description_text {
-    margin-top: 16px;
-}
 
 /*Дальше расписание*/
 /*shedule*/
-.shedule_inner {
+.schedule_section {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    /*margin-top: 34px;*/
-    padding-top: 42px;
+    padding-top: 38px;
+    margin-top: -4px;
     text-align: center;
+    margin-left: 2px;
     height: 584px;
-    /*margin-bottom: -15px;*/
+
+    background-color: #29a19c;
+
+    .schedule_title {
+
+        margin-top: 2px;
+        width: 100%;
+        font-size: 98px;
+        letter-spacing: 4px;
+
+        line-height: 31px;
+        font-family: 'Grand Hotel', cursive;
+        margin-bottom: 33px;
+        font-weight: normal;
+    }
+
+    .schedule_block {
+        width: 100%;
+        position: relative;
+        left: -4px;
+        top: -1px;
+
+        .schedule_days {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            letter-spacing: -0.1px;
+        }
+
+        .schedule_time {
+            font-size: 38px;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+            margin-left: -2px;
+        }
+    }
 }
 
-.shedule_title {
-    width: 100%;
-    font-size: 98px;
-    letter-spacing: 4px;
-    line-height: 31px;
-    font-family: 'Grand Hotel', cursive;
-    margin-bottom: 33px;
-}
 
-.shedule_block {
-    width: 100%;
-    position: relative;
-    left: -4px;
-}
+.branch_section {
 
-.shedule_days {
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 2px;
-    letter-spacing: -0.02vw;
-}
-
-.shedule_time {
-    font-size: 38px;
-    font-weight: 400;
-}
-
-
-/*Branches*/
-.branch_content {
-    /*height: 1035px;*/
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin-top: -10px;
+    margin-top: -19px;
+
+    .branches_title {
+        font-family: 'Grand Hotel', cursive;
+        font-size: 88px;
+        text-align: center;
+        letter-spacing: 3.5px;
+        width: 100%;
+        margin-top: 3px;
+        line-height: 134px;
+        font-weight: normal;
+    }
+
+    .branches_list {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 0 54px;
+        width: 100%;
+
+        .branch_item {
+            width: 26%;
+            position: relative;
+
+            .branch_name {
+                color: #fff;
+                font-size: 33px;
+                font-weight: bold;
+                width: 246px;
+                height: 58px;
+                border-radius: 15px;
+                margin: 36px auto 36px;
+                padding-top: 10px;
+
+
+                letter-spacing: 2px;
+                line-height: 34px;
+
+                position: relative;
+                z-index: 5;
+            }
+
+            .branch_text {
+                margin-top: -2px;
+                font-size: 15px;
+                letter-spacing: 0.69px;
+                line-height: 27.9px;
+                text-align: center;
+            }
+
+            .branch_message {
+                position: absolute;
+                z-index: 0;
+                top: 320px;
+                left: 51px;
+            }
+        }
+    }
 }
 
-.branches_title {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 88px;
-    text-align: center;
-    letter-spacing: 4px;
-    width: 100%;
-    margin-top: 3px;
-    line-height: 134px;
-}
-
-.branches_inner {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 0 54px;
-    width: 100%;
-}
-
-.branches_col {
-    width: 26%;
-}
-
-.branch_name {
-    color: #fff;
-    font-size: 33px;
-    font-weight: bold;
-    width: 246px;
-    height: 58px;
+.footer_section {
     background-color: #29a19c;
-    border-radius: 15px;
-    margin: 34px auto 36px;
-    padding-top: 10px;
-    position: relative;
-    letter-spacing: 2px;
-    line-height: 34px;
-}
+    padding-top: 6px;
 
-.branch_com {
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    background-color: #29a19c;
-    height: 45px;
-    width: 20px;
-    border-radius: 20% 0 50% 350% / 100% 0 100% 300%;
-}
+    .footer_content {
+        display: flex;
+        padding-left: 60px;
+        justify-content: space-between;
 
-.branch_name_jakarta {
-    padding-top: 12px;
-    padding-left: 3px;
-}
+        .links {
+            margin-top: 5px;
+            width: 660px;
+            display: flex;
+            justify-content: space-between;
 
-.branch_name--first {
-    margin-left: -10px;
-}
+            .information {
+                width: 360px;
+            }
 
-.branch_text {
-    font-size: 15px;
-    letter-spacing: 0.045vw;
-    line-height: 28px;
-    text-align: center;
-}
+            .contacts {
+                width: 305px;
+            }
 
-.branch_text--first {
-    width: 98%;
-    margin-left: -5px;
-}
+            .title {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 33px;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+            }
 
-.branch_name--first {
-    display: block;
-    margin-left: 42px;
-}
+            .menu_list {
+                list-style-type: none;
+                margin-top: 52px;
+                margin-left: 2px;
 
-.wave_bot--branch {
-    height: 197px;
-    bottom: -67px;
-    left: -5px;
-    width: 101%;
-}
+                & li {
+                    margin-top: 9.5px;
 
-/*Здесь footer*/
 
-.footer_header {
-    display: flex;
-}
+                    & a {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 22px;
+                        text-decoration: none;
+                        letter-spacing: 1.5px;
+                    }
+                }
 
-.menu_item {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-}
+            }
+        }
 
-.menu_list {
-    list-style-type: none;
-}
+    }
 
-.menu_link {
-    text-decoration: none;
-}
+    .footer_end {
+        display: flex;
+        padding: 43px 58px 39px 60px;
+        justify-content: space-between;
+        margin-top: 50px;
 
-.menu_title {
-    font-size: 33px;
-    font-family: 'Montserrat ', sans-serif;
-    font-weight: bold;
-}
+        .footer_nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-.footer_nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            .nav_link {
+                display: inline-block;
+                margin-right: 63px;
+                vertical-align: top;
+                color: #fff;
+                transition: color .2s linear;
+                text-decoration: none;
+                position: relative;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 19px;
+                padding-right: 5px;
+            }
+        }
 
-.nav_flink {
-    display: inline-block;
-    margin-right: 63px;
-    vertical-align: top;
-    color: #fff;
-    transition: color .2s linear;
-    text-decoration: none;
-    position: relative;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 19px;
-}
+        .socials {
+            width: 16.5%;
+            display: flex;
 
-.footer_content {
-    display: flex;
-    /*margin-top: 53px;*/
-    padding-left: 60px;
+            & i {
+                display: block;
+                margin-right: 50px;
+                position: relative;
+                cursor: pointer;
+            }
 
-}
+            .fa-facebook-f {
+                bottom: 1px;
+                font-size: 24px;
+            }
 
-.footer_end {
-    display: flex;
-    padding: 43px 58px 39px 60px;
-    justify-content: space-between;
-    margin-top: 50px;
-}
+            .fa-instagram {
+                font-size: 26px;
+                bottom: 1.5px;
+                right: 2px;
+            }
 
-.socials {
-    width: 16.5%;
-    display: flex;
-}
+            .fa-twitter {
+                font-size: 23px;
+                bottom: 2px;
+                right: 7px;
+            }
 
-.socials i {
-    display: block;
-    margin-right: 50px;
-    position: relative;
-    cursor: pointer;
-}
+            .fa-youtube {
+                font-size: 22.5px;
+                bottom: -0.5px;
+                right: 17px;
+            }
+        }
+    }
 
-.fa-facebook-f {
-    bottom: 1px;
-    font-size: 24px;
-}
-
-.fa-instagram {
-    font-size: 26px;
-    bottom: 1.5px;
-    right: 2px;
-}
-
-.fa-twitter {
-    font-size: 23px;
-    bottom: 2px;
-    right: 7px;
-}
-
-.fa-youtube {
-    font-size: 22.5px;
-    bottom: -0.5px;
-    right: 17px;
-}
-
-.footer-line {
-    width: 100%;
-    background-color: #222831;
-    height: 7px;
-}
-
-.logo_image123 {
-    width: 55%;
-}
-
-.stats1 {
-    width: 50%;
-    display: block;
-    justify-content: space-between;
-    letter-spacing: 0.1vw;
-}
-
-.stats2 {
-    width: 46%;
-    display: block;
-    justify-content: space-between;
-    letter-spacing: 0.1vw;
-}
-
-.stats2 .Title {
-    letter-spacing: 0.1vw;
-}
-
-.Title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 33px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.menu_list_ott {
-    margin-top: 52px;
-}
-
-.menu_list_ott li {
-    margin-top: 9px;
-}
-
-.stats {
-    margin-top: 5px;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
 }

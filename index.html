@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<img src="images/photoshop.png" style="z-index: 100; position: absolute; opacity: 0.2">
+<!--<img src="images/photoshop.png" style="z-index: 100; position: absolute; opacity: 0.2">-->
 
 <header class="header">
     <div class="container">
@@ -205,209 +205,195 @@
     </section>
 
 
-    <!--Пишите по порядку и с комментариями-->
-    <!--Здесь должны быть voucher, reviews и расписание-->
+    <section class="section container voucher_section">
+        <h1 class="voucher_title">Voucher</h1>
+        <img src="images/voucher.png" alt="Voucher">
+        <button class="btn_order btn_order_voucher">Get Voucher Now</button>
+    </section>
 
-    <section class="section"><!--voucher-->
-        <div class="container">
-            <div class="voucher_inner">
-                <div class="voucher-text">
-                    <h2 class="voucher_title">Voucher</h2> <!--?Мб и не нужен заголовок?-->
-                </div>
-                <img src="images/voucher.png" alt="Voucher">
-                <button class="btn_order btn_order--voucher">Get Voucher Now</button>
-            </div><!--voucher inner-->
-        </div><!--container-->
-    </section><!--voucher-->
+    <section class="section container reviews_section"> <!--reviews-->
+        <h2 class="reviews_title">Customer Reviews</h2>
 
-    <section class="section"> <!--reviews-->
-        <div class="container">
-            <div class="reviews_inner">
-                <div class="reviews_title">
-                    Customer Reviews
-                </div>
-                <div class="reviews_list">
-                    <div class="reviews_john_info">
-                        <img src="images/john_peter.png" class="review_img" alt="photo of John">
-                        <div class="customers_name">
-                            John Peter
-                        </div>
-                        <div class="reviews_description_text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis
-                        </div>
-                    </div>
+        <div class="reviews_list">
+            <div class="reviews_john_info">
+                <img src="images/john_peter.png" class="review_img" alt="photo of John">
+                <h3 class="customers_name">
+                    John Peter
+                </h3>
+                <p class="reviews_description_text">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Quis
+                </p>
+            </div>
 
-                    <div class="reviews_ella_info">
-                        <img src="images/ella_tompson.png" class="review_img" alt="photo of Ella">
-                        <div class="customers_name ella_name">
-                            Ella Thomson
-                        </div>
-                        <div class="reviews_description_text ella_description_text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis
-                        </div>
-                    </div>
-                </div><!--reviews-->
-            </div><!--reviews inner-->
-        </div><!--container-->
-        <svg viewBox="0 0 1844 192"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             width="1844px" height="192px">
-            <path fill-rule="evenodd" fill="rgb(41, 161, 156)"
-                  d="M1843.994,237.997 L1843.994,118.919 C1835.268,113.541 1826.077,108.507 1817.052,103.665 C1488.325,-72.687 1219.857,207.217 905.115,169.781 C764.054,153.002 681.422,67.729 542.822,46.168 C386.353,21.827 322.387,98.421 188.104,108.838 C126.572,113.612 60.654,114.532 -0.005,103.717 L-0.005,237.997 L1843.994,237.997 ZM1466.276,32.280 C1459.748,50.492 1417.590,53.960 1391.395,57.292 C1383.445,58.303 1376.084,59.494 1368.768,61.532 C1362.415,63.303 1355.699,64.770 1348.630,63.373 C1342.121,62.088 1339.686,59.375 1339.732,56.391 C1339.285,55.506 1339.242,54.503 1339.857,53.379 C1343.958,45.908 1358.556,38.357 1368.086,33.010 C1380.021,26.313 1394.365,20.722 1410.623,17.953 C1431.303,14.432 1473.052,13.381 1466.276,32.280 ZM1543.556,23.952 C1537.090,28.358 1527.063,31.906 1516.631,31.872 C1505.831,31.838 1495.487,27.186 1494.486,21.019 C1491.398,17.276 1492.464,12.591 1496.548,8.714 C1502.191,3.358 1513.185,0.749 1523.805,0.108 C1534.764,-0.553 1546.373,1.784 1550.438,7.988 C1554.140,13.635 1550.049,19.528 1543.556,23.952 Z"/>
-        </svg>
-    </section><!--reviews-->
+            <div class="reviews_ella_info">
+                <img src="images/ella_tompson.png" class="review_img" alt="photo of Ella">
+                <h3 class="customers_name ella_name">
+                    Ella Thomson
+                </h3>
+                <p class="reviews_description_text ella_description_text">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Quis
+                </p>
+            </div>
+        </div>
 
-    <!--Дальше расписание-->
+    </section>
 
-    <section class="section section--sea">
-        <div class="container">
-            <div class="shedule_inner">
-                <div class="shedule_title">
-                    We are Open
-                </div>
-                <div class="shedule_block">
-                    <p class="shedule_days">Monday - Friday</p>
-                    <p class="shedule_time">10:00 am- 10:00 pm</p>
-                </div>
-                <div class="shedule_block">
-                    <p class="shedule_days">Saturday and Sunday</p>
-                    <p class="shedule_time">10:00 am - 10:10 pm</p>
-                </div>
+    <svg viewBox="0 0 1844 192"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="1844px" height="192px">
+        <path fill-rule="evenodd" fill="rgb(41, 161, 156)"
+              d="M1843.994,237.997 L1843.994,118.919 C1835.268,113.541 1826.077,108.507 1817.052,103.665 C1488.325,-72.687 1219.857,207.217 905.115,169.781 C764.054,153.002 681.422,67.729 542.822,46.168 C386.353,21.827 322.387,98.421 188.104,108.838 C126.572,113.612 60.654,114.532 -0.005,103.717 L-0.005,237.997 L1843.994,237.997 ZM1466.276,32.280 C1459.748,50.492 1417.590,53.960 1391.395,57.292 C1383.445,58.303 1376.084,59.494 1368.768,61.532 C1362.415,63.303 1355.699,64.770 1348.630,63.373 C1342.121,62.088 1339.686,59.375 1339.732,56.391 C1339.285,55.506 1339.242,54.503 1339.857,53.379 C1343.958,45.908 1358.556,38.357 1368.086,33.010 C1380.021,26.313 1394.365,20.722 1410.623,17.953 C1431.303,14.432 1473.052,13.381 1466.276,32.280 ZM1543.556,23.952 C1537.090,28.358 1527.063,31.906 1516.631,31.872 C1505.831,31.838 1495.487,27.186 1494.486,21.019 C1491.398,17.276 1492.464,12.591 1496.548,8.714 C1502.191,3.358 1513.185,0.749 1523.805,0.108 C1534.764,-0.553 1546.373,1.784 1550.438,7.988 C1554.140,13.635 1550.049,19.528 1543.556,23.952 Z"/>
+    </svg>
+
+
+    <section class="section container schedule_section">
+        <h1 class="schedule_title">
+            We are Open
+        </h1>
+
+        <div class="schedule_block">
+            <p class="schedule_days">Monday - Friday</p>
+            <p class="schedule_time">10:00 am- 10:00 pm</p>
+        </div>
+
+        <div class="schedule_block">
+            <p class="schedule_days">Saturday and Sunday</p>
+            <p class="schedule_time">10:00 am - 10:10 pm</p>
+        </div>
+    </section>
+
+    <svg viewBox="5 120 1451 144"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="1451px" height="170px">
+        <path fill-rule="evenodd" fill="rgb(41, 161, 156)"
+              d="M1451.002,0.005 L1451.002,171.213 C1427.793,174.064 1405.575,183.289 1385.259,194.628 C1273.407,257.045 1186.785,306.316 1037.574,256.697 C971.706,234.795 962.216,209.334 895.960,192.372 C815.740,171.835 775.782,226.920 698.915,233.386 C573.198,243.961 498.468,119.554 362.899,145.438 C221.800,172.376 231.643,272.072 49.578,248.869 C32.413,246.682 14.259,241.815 0.002,231.579 L0.002,0.005 L1451.002,0.005 Z"/>
+    </svg>
+
+    <section class="section container branch_section">
+        <h1 class="branches_title">
+            Our Branches
+        </h1>
+
+        <div class="branches_list">
+            <div class="branch_item">
+                <img src="images/new_york.png" alt="">
+                <img src="design/message.svg" class="branch_message" style="left: 41px">
+
+                <h2 class="branch_name" style="margin-left: 41px">
+                    New York
+                </h2>
+
+                <p class="branch_text" style="margin-left: -3px; width: 337px">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliq
+                    ua. Ut enim ad minim veniam, quis nostr
+                    ud exercitation
+                </p>
+            </div>
+
+            <div class="branch_item">
+                <img src="images/jakarta.png" alt="">
+                <img src="design/message.svg" class="branch_message">
+
+                <h2 class="branch_name" style="margin-left: 52px">
+                    Jakarta
+                </h2>
+
+                <p class="branch_text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliq
+                    ua. Ut enim ad minim veniam, quis nostr
+                    ud exercitation
+                </p>
+            </div>
+
+            <div class="branch_item">
+                <img src="images/paris.png" alt="">
+                <img src="design/message.svg" class="branch_message">
+
+                <h2 class="branch_name">
+                    Paris
+                </h2>
+
+                <p class="branch_text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliq
+                    ua. Ut enim ad minim veniam, quis nostr
+                    ud exercitation
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="section"><!--Branches-->
-        <svg viewBox="0 133 1451 144"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             width="1451px" height="144px">
-            <path fill-rule="evenodd" fill="rgb(41, 161, 156)"
-                  d="M1451.002,0.005 L1451.002,171.213 C1427.793,174.064 1405.575,183.289 1385.259,194.628 C1273.407,257.045 1186.785,306.316 1037.574,256.697 C971.706,234.795 962.216,209.334 895.960,192.372 C815.740,171.835 775.782,226.920 698.915,233.386 C573.198,243.961 498.468,119.554 362.899,145.438 C221.800,172.376 231.643,272.072 49.578,248.869 C32.413,246.682 14.259,241.815 0.002,231.579 L0.002,0.005 L1451.002,0.005 Z"/>
-        </svg>
-        <div class="container">
-            <div class="branch_content">
-                <div class="branches_title">
-                    Our Branches
-                </div>
-                <div class="branches_inner">
-                    <div class="branches_col">
-                        <img src="images/new_york.png" alt="">
-                        <div class="branch_name branch_name--first">
-                            <div class="branch_com"></div>
-                            New York
-                        </div>
-                        <div class="branch_text branch_text--first">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliq
-                            ua. Ut enim ad minim veniam, quis nostr
-                            ud exercitation
-                        </div>
-                    </div>
-                    <div class="branches_col">
-                        <img src="images/jakarta.png" alt="">
-                        <div class="branch_name branch_name_jakarta">
-                            <div class="branch_com"></div>
-                            Jakarta
-                        </div>
-                        <div class="branch_text">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliq
-                            ua. Ut enim ad minim veniam, quis nostr
-                            ud exercitation
-                        </div>
-                    </div>
-                    <div class="branches_col">
-                        <img src="images/paris.png" alt="">
-                        <div class="branch_name">
-                            <div class="branch_com"></div>
-                            Paris
-                        </div>
-                        <div class="branch_text">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliq
-                            ua. Ut enim ad minim veniam, quis nostr
-                            ud exercitation
-                        </div>
-                    </div>
-                </div><!--Branches inner-->
-            </div>
-        </div><!--container-->
-        <svg viewBox="0 0 1451 134"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             width="1451px" height="134px">
-            <path fill-rule="evenodd" fill="rgb(41, 161, 156)"
-                  d="M-0.002,194.997 L-0.002,74.471 C23.207,72.464 45.425,65.970 65.741,57.988 C177.593,14.048 264.215,-20.637 413.426,14.293 C479.294,29.711 488.784,47.635 555.040,59.576 C635.260,74.033 675.218,35.255 752.085,30.703 C877.802,23.259 952.532,110.837 1088.101,92.616 C1229.200,73.652 1219.357,3.469 1401.422,19.803 C1418.587,21.343 1436.741,24.769 1450.998,31.975 L1450.998,194.997 L-0.002,194.997 Z"/>
-        </svg>
-    </section><!--Branches-->
 
-    <!--Здесь footer-->
+    <svg viewBox="0 0 1451 134"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="1451px" height="216px" style="position: relative; top: 4px">
+        <path fill-rule="evenodd" fill="rgb(41, 161, 156)"
+              d="M-0.002,194.997 L-0.002,74.471 C23.207,72.464 45.425,65.970 65.741,57.988 C177.593,14.048 264.215,-20.637 413.426,14.293 C479.294,29.711 488.784,47.635 555.040,59.576 C635.260,74.033 675.218,35.255 752.085,30.703 C877.802,23.259 952.532,110.837 1088.101,92.616 C1229.200,73.652 1219.357,3.469 1401.422,19.803 C1418.587,21.343 1436.741,24.769 1450.998,31.975 L1450.998,194.997 L-0.002,194.997 Z"/>
+    </svg>
 
-    <footer class="section section--sea">
 
-        <div class="container">
-            <div class="footer_content">
-                <div class="logo_image123">
-                    <img src="images/logo.png" width="305" height="69">
-                </div>
-                <div class="stats">
-                    <div class="stats1">
-                        <div class="Title">Information.</div>
-                        <div class="menu_list_ott">
-                            <ul class="menu_list">
-                                <li class="menu_item"><a href="#" class="menu_link">About us</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link">Branches</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link">Menu</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link">Contact</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link">Map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="stats2">
-                        <div class="Title">Contact Us.</div>
-                        <div class="menu_list_ott">
-                            <ul class="menu_list">
-                                <li class="menu_item"><a href="#" class="menu_link">Support</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link">your_id@gmail.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <footer class="section container footer_section">
+        <div class="footer_content">
+            <img src="images/logo.png" width="305px" height="69px">
 
-            <div class="footer_end">
-                <div class="footer_nav">
-                    <nav class="nav_footer">
-                        <a class="nav_flink" href="#">Home</a>
-                        <a class="nav_flink" href="#">About</a>
-                        <a class="nav_flink" href="#">Menu</a>
-                        <a class="nav_flink" href="#">Blog</a>
-                        <a class="nav_flink" href="#">Shop</a>
-                        <a class="nav_flink" href="#">Contact</a>
-                    </nav>
+            <div class="links">
+                <div class="information">
+                    <h3 class="title">Information.</h3>
+
+                    <ul class="menu_list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Branches</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Map</a></li>
+                    </ul>
+
                 </div>
 
-                <div class="socials">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
+                <div class="contacts">
+                    <h3 class="title">Contact Us.</h3>
+
+                    <ul class="menu_list">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">your_id@gmail.com</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>
-        <div class="footer-line"></div>
-    </footer>
 
-</div><!--page-->
+        <div class="footer_end">
+            <nav class="footer_nav">
+                <a class="nav_link" href="#">Home</a>
+                <a class="nav_link" href="#">About</a>
+                <a class="nav_link" href="#">Menu</a>
+                <a class="nav_link" href="#">Blog</a>
+                <a class="nav_link" href="#">Shop</a>
+                <a class="nav_link" href="#">Contact</a>
+            </nav>
+
+            <div class="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+    </footer>
+</div>
 </body>
 
 
